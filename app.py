@@ -11,8 +11,8 @@ if not sys.warnoptions:
 import dash
 import numpy as np
 import pandas as pd
-# import dash_core_components as dcc
-# import dash_html_components as html
+import dash_core_components as dcc
+import dash_html_components as html
 import plotly.express as px
 import plotly.graph_objects as go
 from dash import dcc
@@ -22,6 +22,7 @@ from dash import html
 from plotly.subplots import make_subplots
 
 app = dash.Dash(__name__)
+server = app.server
 
 # To view all the columns in the dataframe
 pd.set_option('display.max_columns', 20)
